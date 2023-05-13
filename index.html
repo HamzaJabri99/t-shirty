@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./assets//css/styles.css" />
+
     <title>t-shirty</title>
   </head>
   <body>
@@ -89,7 +99,83 @@
       </section>
 
       <!-- Categories -->
-      <section class="categories"></section>
+      <section class="categories container section">
+        <h3 class="section__title"><span>Popular</span> Categories</h3>
+        <div class="categories__container swiper">
+          <div class="swiper-wrapper">
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-1.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">T-shirt</h3>
+            </a>
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-2.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">Bags</h3>
+            </a>
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-3.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">Sandal</h3>
+            </a>
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-4.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">Scarf Cap</h3>
+            </a>
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-5.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">Shoes</h3>
+            </a>
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-6.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">Pillowcase</h3>
+            </a>
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-7.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">Jumpsuit</h3>
+            </a>
+            <a href="shop.html" class="category__item swiper-slide"
+              ><img
+                src="./assets/img/category-8.jpg"
+                alt=""
+                class="category__img"
+              />
+              <h3 class="category__title">Hats</h3>
+            </a>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fi fi-rs-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fi fi-rs-angle-left"></i>
+          </div>
+        </div>
+      </section>
 
       <!-- Products -->
       <section class="products"></section>
@@ -109,5 +195,9 @@
 
     <!-- Footer -->
     <footer class="footer"></footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
