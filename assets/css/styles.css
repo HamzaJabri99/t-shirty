@@ -367,3 +367,34 @@ input {
 .swiper-button-next {
     right: 0rem;
 }
+
+/*-- Products --*/
+.tab__btns {
+    display: flex;
+    column-gap: 0.75rem;
+}
+
+.tab__btn {
+    background-color: var(--container-color);
+    color: var(--title-color);
+    padding: 1rem 1.25rem 0.875rem;
+    border-radius: 0.25rem;
+    font-family: var(--secondary-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+    cursor: pointer;
+}
+
+.products__container {
+    grid-template-columns: repeat(4, 1fr);
+}
+.tab__item:not(.active-tab){
+    display: none;
+}
+
+/*-- Active Tab --*/
+.tab__btn.active-tab {
+    background-color: var(--main-color);
+    background-color: var(--secondary-color);
+
+}
