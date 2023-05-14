@@ -2,7 +2,7 @@
 
 var swiperCategories = new Swiper(".categories__container", {
   spaceBetween: 24,
-  loop:true,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -21,4 +21,24 @@ var swiperCategories = new Swiper(".categories__container", {
       spaceBetween: 24,
     },
   },
+});
+
+// Products Tabs
+const tabs = document.querySelectorAll("[data-target]");
+const tabContents = document.querySelectorAll("[content]");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
+    //const target = document.querySelector(e.target.getAttribute("data-target"));
+    const target = document.querySelector(tab.dataset.target);
+    //tab.classList.toggle("active-tab");
+    //console.log(target);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active-tab");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active-tab");
+    });
+    target.classList.add("active-tab");
+    e.target.classList.add("active-tab");
+  });
 });
