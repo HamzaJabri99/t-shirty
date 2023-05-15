@@ -331,6 +331,12 @@ input {
     color: var(--main-color);
 }
 
+.btn--md {
+    font-family: var(--body-font);
+    height: 45px;
+    line-height: 42px;
+}
+
 /*-- Categories --*/
 .categories {
     overflow: hidden;
@@ -600,4 +606,110 @@ input {
     background-color: var(--main-color);
     border-color: var(--main-color);
     color: var(--body-color);
+}
+
+/*-- Deals Section --*/
+.deals__container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.deals__item:nth-child(1) {
+    background-image: url('../img/deals-1.jpg');
+    object-fit: cover;
+}
+
+.deals__item:nth-child(2) {
+    background-image: url('../img/deals-2.png');
+}
+
+.deals__item {
+    padding: 3rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.deals__brand {
+    color: var(--main-color);
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.deals__category {
+    font-family: var(--secondary-font);
+    font-size: var(--small-font-size);
+}
+
+.deals__title {
+    max-width: 240px;
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-400);
+    line-height: 1.3;
+}
+
+.deals__price .new__price,
+.deals__price .old__price {
+    font-size: var(--large-font-size);
+}
+
+.deals__price .new__price {
+    color: #ff334e;
+}
+
+.deals__countdown-text {
+    margin-bottom: 0.25rem;
+}
+
+.countdown {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.countdown__amount {
+    position: relative;
+}
+
+.countdown__amount::after {
+    content: ':';
+    color: var(--main-color);
+    font-size: var(--large-font-size);
+    position: absolute;
+    right: -20%;
+    top: 20%;
+}
+
+.countdown__amount:last-child::after {
+    content: '';
+}
+
+.countdown__period {
+    background: var(--main-color);
+    color: var(--body-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-600);
+    margin-bottom: 0.5rem;
+}
+
+.unit {
+    font-size: var(--small-font-size);
+    text-align: center;
+    display: block;
+}
+
+.deals__btn .btn {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.deals__btn .btn:hover {
+    background-color: var(--body-color);
 }
