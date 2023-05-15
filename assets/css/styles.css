@@ -713,3 +713,8 @@ input {
 .deals__btn .btn:hover {
     background-color: var(--body-color);
 }
+
+/*-- New Arrivals section--*/
+.new__arrivals{
+    overflow: hidden;
+}
