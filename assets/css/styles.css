@@ -906,3 +906,62 @@ input {
     color: var(--text-color-light);
     font-size: var(--small-font-size);
 }
+
+/*-- Shop Page --*/
+/*-- Breadcrumb Section --*/
+.breadcrumb {
+    background-color: var(--container-color);
+    padding: 1.5rem 0;
+}
+
+.breadcrumb__list {
+    column-gap: 0.75rem;
+}
+
+.breadcrumb__link {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+.products__container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.total__products {
+    margin-bottom: 2.5rem;
+}
+
+.total__products span {
+    color: var(--main-color);
+    font-weight: var(--weight-600);
+}
+
+.pagination {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 2.75rem;
+}
+
+.pagination__link {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 0.25rem;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-700);
+    transition: all 0.15s var(--transition);
+}
+
+.pagination__link.active,
+.pagination__link:hover {
+    background-color: var(--main-color);
+    color: var(--body-color);
+}
+
+.pagination__link.icon {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
