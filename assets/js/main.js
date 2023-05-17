@@ -66,3 +66,16 @@ tabs.forEach((tab) => {
     e.target.classList.add("active-tab");
   });
 });
+
+//Image Gallery
+const imgGallery = () => {
+  const mainImg = document.querySelector(".details__img");
+  const smallImgs = document.querySelectorAll(".details__small-img");
+  smallImgs.forEach((smallImg) => {
+    smallImg.addEventListener("click", () => {
+      //mainImg.setAttribute("src", smallImg.getAttribute("src"));
+      mainImg.src = smallImg.getAttribute("src");
+    });
+  });
+};
+imgGallery();
