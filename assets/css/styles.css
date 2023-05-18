@@ -103,6 +103,11 @@ input {
     outline: none
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 /*-- Shared css classes--*/
 .container {
     max-width: 1320px;
@@ -155,6 +160,22 @@ input {
     color: var(--text-color-light);
     font-size: var(--small-font-size);
     text-decoration: line-through;
+}
+
+.form {
+    row-gap: 1rem;
+}
+
+.form__group {
+    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.textarea {
+    height: 200px;
+    padding: 1rem;
+    resize: none;
 }
 
 /*-- Header & Nav --*/
@@ -1103,4 +1124,97 @@ input {
 .details__meta {
     border-top: 1px solid var(--border-color-alt);
     padding-top: 1rem;
+}
+
+/*-- Details infos & reviews section--*/
+.detail__tabs {
+    display: flex;
+    column-gap: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.detail__tab {
+    font-family: var(--secondary-font);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-600);
+    cursor: pointer;
+}
+
+.detail__tab.active-tab {
+    color: var(--main-color);
+}
+
+.details__tab-content:not(.active-tab) {
+    display: none;
+}
+
+
+.info__table tr th,
+.info__table tr td {
+    border: 1px solid var(--border-color-alt);
+    padding: 0.625rem 1.25rem;
+    border-block: 1;
+}
+
+.info__table tr th {
+    font-weight: var(--weight-500);
+    text-align: left;
+}
+
+.info__table tr td {
+    color: var(--text-color-light);
+}
+
+.reviews__container {
+    padding-bottom: 3rem;
+    row-gap: 1.25rem;
+}
+
+.review__single {
+    border-bottom: 1px solid var(--border-color-alt);
+    padding-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.review__single:last-child {
+    padding-bottom: 3rem;
+}
+
+.review__img {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.review__title {
+    font-size: var(--tiny-font-size)
+}
+
+.review__data {
+    width: calc(100% - 94px);
+}
+
+.review__description {
+    margin-bottom: 0.5rem;
+}
+
+.review__rating {
+    color: hsl(42, 100%, 50%);
+    margin-bottom: 0.25rem;
+}
+
+.review__rating,
+.review__date {
+    font-size: var(--small-font-size);
+}
+
+.review__form-title {
+    font-size: var(--large-font-size);
+    margin-bottom: 1rem;
+}
+
+.rate__product {
+    margin-bottom: 2rem;
 }
