@@ -1331,3 +1331,52 @@ table {
     position: relative;
     z-index: 10;
 }
+
+.cart__group {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: flex-start;
+}
+
+.cart__shipping .section__title,
+.cart__coupon .section__title,
+.cart__total .section__title {
+    font-size: var(--large-font-size);
+    margin-bottom: 1rem;
+}
+
+.cart__coupon {
+    margin-top: 3rem;
+}
+
+.coupon__form .form__group {
+    align-items: center;
+}
+
+.cart__total {
+    border: 1px solid var(--border-color-alt);
+    border-radius: 0.25rem;
+    padding: 1.75rem;
+}
+
+.cart__total-table {
+    margin-bottom: 1rem;
+}
+
+.cart__total-table tr td {
+    border: 1px solid var(--border-color-alt);
+    padding: 0.75rem 0.5rem;
+    width: 50%;
+}
+
+.cart__total-title {
+    font-size: var(--small-font-size);
+}
+
+.cart__total-price {
+    color: var(--main-color);
+    font-weight: var(--weight-700);
+}
+
+.cart__total .btn {
+    display: inline-flex;
+}

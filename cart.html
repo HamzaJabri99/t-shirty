@@ -198,7 +198,71 @@
           </a>
         </div>
         <div class="devider">
-            <i class="fi fi-rs-fingerprint"></i>
+          <i class="fi fi-rs-fingerprint"></i>
+        </div>
+        <div class="cart__group container grid">
+          <div>
+            <div class="cart__shipping">
+              <h3 class="section__title">Calculate Shipping</h3>
+              <form action="" class="form grid">
+                <input
+                  type="text"
+                  placeholder="State / Country"
+                  class="form__input"
+                />
+                <div class="form__group grid">
+                  <input type="text" placeholder="City" class="form__input" />
+                  <input
+                    type="text"
+                    placeholder="PostCode / Zip code"
+                    class="form__input"
+                  />
+                </div>
+                <div class="form__btn">
+                  <button class="btn flex btn--sm">
+                    <i class="fi-rs-shuffle"></i> Update
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="cart__coupon">
+              <h3 class="section__title">Apply Coupon</h3>
+              <form action="" class="coupon__form form grid">
+                <div class="form__group grid">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Enter Coupon Code"
+                  />
+                  <div class="form__btn">
+                    <button class="btn flex btn--sm">
+                      <i class="fi-rs-shuffle"></i> Apply
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="cart__total">
+            <h3 class="section__title">Cart Totals</h3>
+            <table class="cart__total-table">
+              <tr>
+                <td><span class="cart__total-price">Cart Subtotal</span></td>
+                <td><span class="cart__total-price">$300.00</span></td>
+              </tr>
+              <tr>
+                <td><span class="cart__total-price">Shipping</span></td>
+                <td><span class="cart__total-price">$50.00</span></td>
+              </tr>
+              <tr>
+                <td><span class="cart__total-price">Total</span></td>
+                <td><span class="cart__total-price">$350.00</span></td>
+              </tr>
+            </table>
+            <a href="checkout.html" class="btn flex btn--md">
+              <i class="fi fi-rs-box-alt"></i> Proceed To Checkout
+            </a>
+          </div>
         </div>
       </section>
 
