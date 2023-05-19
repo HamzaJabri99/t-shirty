@@ -1382,6 +1382,20 @@ table {
 .cart__total .btn {
     display: inline-flex;
 }
-.wishlist{
+
+.wishlist {
     margin-bottom: 5rem;
+}
+
+/* Login Register */
+.login-register__container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: flex-start;
+}
+
+.login,
+.register {
+    border: 1px solid var(--border-color-alt);
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
