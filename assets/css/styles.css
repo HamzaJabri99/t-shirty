@@ -1399,3 +1399,75 @@ table {
     padding: 2rem;
     border-radius: 0.5rem;
 }
+
+/*-- Checkout Page --*/
+.checkout__container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.checkout__group:nth-child(2) {
+    border: 1px solid var(--border-color-alt);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.checkout__group .section__title {
+    font-size: var(--large-font-size);
+}
+
+.checkout__title {
+    font-size: var(--small-font-size);
+}
+
+.order__table tr th,
+.order__table tr td {
+    border: 1px solid var(--border-color-alt);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.order__table tr th {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.order__img {
+    width: 80px;
+}
+
+.table__quantity,
+.order__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.order__grand-total {
+    color: var(--main-color);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+}
+
+.payment__methods {
+    margin: 2.5rem 0 2.75rem 0;
+}
+
+.payment__title {
+    margin-bottom: 1.5rem;
+}
+
+.payment__option {
+    margin-bottom: 1rem;
+}
+
+.payment__input {
+    accent-color: var(--main-color);
+}
+
+.payment__label {
+    font-size: var(--small-font-size);
+}
+
+.table__price,
+.order__grand-total {
+    display: block;
+    padding: 0.25rem 0;
+}
