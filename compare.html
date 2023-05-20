@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header>
       <div class="header__top">
         <div class="header__container container">
           <div class="header__contact">
@@ -50,7 +50,7 @@
               <a href="accounts.html" class="nav__link">My Account</a>
             </li>
             <li class="nav__item">
-              <a href="compare.html" class="nav__link">Compare</a>
+              <a href="compare.html" class="nav__link active-link">Compare</a>
             </li>
             <li class="nav__item">
               <a href="login-register.html" class="nav__link">Login</a>
@@ -79,6 +79,7 @@
         </div>
       </nav>
     </header>
+
     <!-- Main -->
     <main class="main">
       <!-- Breadcrumb -->
@@ -88,134 +89,199 @@
           <li><span class="breadcrumb__link">></span></li>
           <li><span class="breadcrumb__link">Shop</span></li>
           <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link">Checkout</span></li>
+          <li><span class="breadcrumb__link">Compare</span></li>
         </ul>
       </section>
-      <!-- Checkout -->
-      <section class="checkout section--lg">
-        <div class="checkout__container container grid">
-          <div class="checkout__group">
-            <h3 class="section__title">Billing Details</h3>
-            <form action="" class="form grid">
-              <input type="text" placeholder="Name" class="form__input" />
-              <input type="text" placeholder="Address" class="form__input" />
-              <input type="text" placeholder="City" class="form__input" />
-              <input type="text" placeholder="Country" class="form__input" />
-              <input
-                type="text"
-                placeholder="Postcode / ZipCode"
-                class="form__input"
+      <!-- Compare -->
+      <section class="compare container section--lg">
+        <table class="compare__table">
+          <tr>
+            <th>Image</th>
+            <td>
+              <img
+                src="./assets/img/product-1-1.jpg"
+                alt=""
+                class="compare__img"
               />
-              <input type="email" placeholder="email" class="form__input" />
-              <h3 class="checkout__title">Additional Information</h3>
-              <textarea
-                placeholder="Order note"
-                class="form__input textarea"
-              ></textarea>
-            </form>
-          </div>
-          <div class="checkout__group">
-            <h3 class="section__title">Cart Totals</h3>
-            <table class="order__table">
-              <tr>
-                <th colspan="2">Products</th>
-                <th>Total</th>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="./assets/img/product-5-2.jpg"
-                    alt=""
-                    class="order__img"
-                  />
-                </td>
-                <td>
-                  <h3 class="table__title">Yidarton Women Summer Hat</h3>
-                  <p class="table__quantity">x 3</p>
-                </td>
-                <td><span class="table__price">$180.00</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="./assets/img/product-10-1.jpg"
-                    alt=""
-                    class="order__img"
-                  />
-                </td>
-                <td>
-                  <h3 class="table__title">LDB Moon Women Summer Sandals</h3>
-                  <p class="table__quantity">x 2</p>
-                </td>
-                <td><span class="table__price">$200.00</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="./assets/img/product-3-1.jpg"
-                    alt=""
-                    class="order__img"
-                  />
-                </td>
-                <td>
-                  <h3 class="table__title">Men's Short Shoes Light brown</h3>
-                  <p class="table__quantity">x 1</p>
-                </td>
-                <td><span class="table__price">$300.00</span></td>
-              </tr>
-              <tr>
-                <td><span class="order__subtitle">SubTotal</span></td>
-                <td colspan="2"><span class="table__price">$680.00</span></td>
-              </tr>
-              <tr>
-                <td><span class="order__subtitle">Shipping</span></td>
-                <td colspan="2">
-                  <span class="table__price">Free Shipping</span>
-                </td>
-              </tr>
-              <tr>
-                <td><span class="order__subtitle">Total</span></td>
-                <td colspan="2">
-                  <span class="order__grand-total">$680.00</span>
-                </td>
-              </tr>
-            </table>
-            <div class="payment__methods">
-              <h3 class="checkout__title payment__title">Payment</h3>
-              <div class="payment__option flex">
-                <input
-                  type="radio"
-                  class="payment__input"
-                  name="payment"
-                  id="bank"
-                  checked
-                />
-                <label for="bank" class="payment__label"
-                  >Direct Bank Transfer</label
-                >
-              </div>
-              <div class="payment__option flex">
-                <input
-                  type="radio"
-                  class="payment__input"
-                  name="payment"
-                  id="check"
-                />
-                <label for="check" class="payment__label">Check Payment</label>
-              </div>
-              <div class="payment__option flex">
-                <input
-                  type="radio"
-                  class="payment__input"
-                  name="payment"
-                  id="paypal"
-                />
-                <label for="paypal" class="payment__label">Paypal</label>
-              </div>
-            </div>
-            <button class="btn btn--md">Place Order</button>
-          </div>
-        </div>
+            </td>
+            <td>
+              <img
+                src="./assets/img/product-4-1.jpg"
+                alt=""
+                class="compare__img"
+              />
+            </td>
+            <td>
+              <img
+                src="./assets/img/product-6-1.jpg"
+                alt=""
+                class="compare__img"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <td><h3 class="table__title">Plain Striolo Shirts</h3></td>
+            <td><h3 class="table__title">Chen Cardigan</h3></td>
+            <td><h3 class="table__title">Henley Shirt</h3></td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td>$100.00</td>
+            <td>$60.00</td>
+            <td>$50.99</td>
+          </tr>
+          <tr>
+            <th>Description</th>
+            <td>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae atque numquam ullam quae ducimus ipsa, itaque, enim
+              hic molestias iure necessitatibus deserunt distinctio asperiores
+              quaerat placeat sunt odit reprehenderit at?
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates hic veritatis at voluptas eveniet amet distinctio non?
+              Eum, omnis quos, distinctio blanditiis saepe officiis commodi
+              aspernatur sit vitae iste doloribus?
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis nesciunt adipisci quisquam asperiores quos illum,
+              nostrum eligendi atque, inventore similique qui distinctio iste
+              molestias reiciendis rerum repellendus eveniet nobis tempore.
+            </td>
+          </tr>
+          <tr>
+            <th>Colors</th>
+            <td>
+              <ul class="color__list flex">
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(37, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(353, 100%, 67%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(49, 100%, 60%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(304, 100%, 78%)"
+                  ></a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul class="color__list flex">
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(37, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(353, 100%, 67%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(49, 100%, 60%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(304, 100%, 78%)"
+                  ></a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul class="color__list flex">
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(37, 100%, 65%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(353, 100%, 67%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(49, 100%, 60%)"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="color__link"
+                    style="background-color: hsl(304, 100%, 78%)"
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Stock</th>
+            <td>Out of Stock</td>
+            <td>In Stock</td>
+            <td>In Stock</td>
+          </tr>
+          <tr>
+            <th>Weight</th>
+            <td>140 gram</td>
+            <td>200 gram</td>
+            <td>40 gram</td>
+          </tr>
+          <tr>
+            <th>Dimensions</th>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <th>Buy</th>
+            <td><button class="btn btn--sm">Add to Cart</button></td>
+            <td><button class="btn btn--sm">Add to Cart</button></td>
+            <td><button class="btn btn--sm">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <th>Remove</th>
+            <td><button class="fi fi-rs-trash"></button></td>
+            <td><button class="fi fi-rs-trash"></button></td>
+            <td><button class="fi fi-rs-trash"></button></td>
+          </tr>
+        </table>
       </section>
       <!-- Newsletter -->
       <section class="newsletter section">
