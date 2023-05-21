@@ -1471,3 +1471,28 @@ table {
     display: block;
     padding: 0.25rem 0;
 }
+
+/*-- Compare Page --*/
+.compare__table tr th,
+.compare__table tr td {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color-alt);
+}
+
+.compare__table tr th {
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+}
+
+.compare__table tr td {
+    text-align: center;
+}
+
+.compare__table .color__list {
+    justify-content: center;
+}
+
+.table__weight,
+.table__dimension {
+    font-size: var(--small-font-size);
+}
