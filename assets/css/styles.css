@@ -1496,3 +1496,87 @@ table {
 .table__dimension {
     font-size: var(--small-font-size);
 }
+
+/*-- Acounts Page --*/
+.accounts__container {
+    grid-template-columns: 4fr 8fr;
+}
+
+.tab__content:not(.active-tab) {
+    display: none;
+}
+
+.account__tabs {
+    border: 1px solid var(--border-color-alt);
+    border-radius: 0.25rem;
+}
+
+.account__tab {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.account__tab:hover {
+    background: #edecec;
+    color: var(--title-color);
+}
+
+.account__tab.active-tab {
+    background: var(--main-color);
+    color: var(--body-color);
+}
+
+.account__tab:not(:last-child) {
+    border-bottom: 1px solid var(--border-color-alt);
+}
+
+.tab__content {
+    border: 1px solid var(--border-color-alt);
+}
+
+.tab__header {
+    background: var(--container-color);
+    border-bottom: 1px solid var(--border-color-alt);
+    padding: 1rem;
+    font-size: var(--small-font-size);
+}
+
+.tab__body {
+    padding: 1rem;
+}
+
+.placed__order-table tr th {
+    color: var(--title-color);
+    text-align: left;
+}
+
+.placed__order-table tr th,
+.placed__order-table tr td {
+    border: 1px solid var(--border-color-alt);
+    padding: 0.5rem;
+    font-size: var(--small-font-size);
+}
+
+.view__order,
+.edit {
+    color: var(--main-color);
+}
+
+.address {
+    font-style: var(--normal-font-size);
+    font-size: var(--small-font-size);
+    line-height: 1.5rem;
+}
+
+.city {
+    margin-bottom: 0.75rem;
+}
+
+.edit {
+    font-size: var(--small-font-size);
+}
