@@ -1648,6 +1648,12 @@ table {
         align-items: flex-end;
         gap: 2rem;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        transition: 0.25s all ease-in-out;
+
+    }
+
+    .show-menu {
+        right: 0;
     }
 
     .nav__list {
@@ -1670,6 +1676,10 @@ table {
         display: flex;
     }
 
+    .nav__toggle {
+        cursor: pointer;
+    }
+
     .nav__menu-top {
         align-items: center;
         justify-content: space-between;
@@ -1684,6 +1694,7 @@ table {
     .nav__close {
         font-size: var(--h2-font-size);
         line-height: 1rem;
+        cursor: pointer;
     }
 
     .header__action-btn img {
