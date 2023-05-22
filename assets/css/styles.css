@@ -46,7 +46,19 @@
 
 /*-- Responsive Typography --*/
 @media screen and (max-width:1200px) {
-    :root {}
+    :root {
+        --big-font-size: 2.25rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.375rem;
+        --h3-font-size: 1.25rem;
+        --h4-font-size: 1.125rem;
+        --large-font-size: 1rem;
+        --normal-font-size: 0.9375rem;
+        --small-font-size: 0.8125rem;
+        --smaller-font-size: 0.6875rem;
+        --tiny-font-size: 0.625rem;
+
+    }
 }
 
 /*-- Base --*/
@@ -835,6 +847,7 @@ table {
     font-family: var(--secondary-font);
     font-size: var(--small-font-size);
     font-weight: var(--weight-600);
+    text-align: center;
 }
 
 .newsletter__form {
@@ -1580,3 +1593,32 @@ table {
 .edit {
     font-size: var(--small-font-size);
 }
+
+/*-- BreakPoints --*/
+/*-- large devices --*/
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .products__container,
+    .showcase__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .accounts__container {
+        grid-template-columns: 3fr 9fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {}
+
+/*-- For medium devices --*/
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
+
+/*-- For Small Devices --*/
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 350px) {}
