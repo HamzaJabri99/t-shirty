@@ -1,5 +1,4 @@
 //Categories Swiper
-
 var swiperCategories = new Swiper(".categories__container", {
   spaceBetween: 24,
   loop: true,
