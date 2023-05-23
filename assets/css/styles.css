@@ -1881,9 +1881,81 @@ table {
     .compare__table tr td {
         display: block;
     }
+
+    .cart__total .btn {
+
+        display: block;
+    }
 }
 
 /*-- For Small Devices --*/
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .category__item {
+        padding-bottom: 1rem;
+    }
+
+    .category__img {
+        margin-bottom: 1rem;
+    }
+
+    .deals__item,
+    .checkout__group:nth-child(2) {
+        padding: 1.25rem;
+    }
+
+    .pagination {
+        column-gap: 0.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .pagination__link {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+
+
+    .placed__order-table th,
+    .order__table tr th {
+        display: none;
+    }
+
+    .placed__order-table tr td,
+    .order__table tr td,
+    .info__table tr th,
+    .info__table tr td {
+        display: block;
+    }
+
+    .form__group {
+        grid-template-columns: 1fr;
+    }
+
+    .cart__total {
+        padding: 1.25rem;
+    }
+
+    .payment__methods {
+        margin-block: 2.25rem 2.5rem;
+    }
+
+    .detail__tabs {
+        column-gap: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .review__single {
+        column-gap: 1rem;
+    }
+
+    .footer__title {
+        margin-top: 0.25em;
+    }
+    .footer__bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 350px) {}
