@@ -1859,7 +1859,29 @@ table {
 
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .products__container,
+    .showcase__container,
+    .footer__container,
+    .details__container,
+    .accounts__container,
+    .login-register__container {
+        grid-template-columns: 100%;
+    }
+
+    .tab__header,
+    .tab__body {
+        padding: 0.75rem;
+    }
+
+    .compare__table tr td {
+        display: block;
+    }
+}
 
 /*-- For Small Devices --*/
 @media screen and (max-width: 576px) {}
