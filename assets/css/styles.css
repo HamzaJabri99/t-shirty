@@ -1827,6 +1827,36 @@ table {
         padding: 1.25rem;
     }
 
+    .table tr th:nth-child(1),
+    .table tr td:nth-child(1) {
+        width: 140px;
+    }
+
+    .table tr th:nth-child(2),
+    .table tr td:nth-child(2) {
+        width: 330px;
+    }
+
+    .table tr th:nth-child(3),
+    .table tr td:nth-child(3) {
+        width: 80px;
+    }
+
+    .table tr th:nth-child(4),
+    .table tr td:nth-child(4) {
+        width: 160px;
+    }
+
+    .table tr th:nth-child(5),
+    .table tr td:nth-child(5) {
+        width: 160px;
+    }
+
+    .table tr th:nth-child(6),
+    .table tr td:nth-child(6) {
+        width: 100px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {}
